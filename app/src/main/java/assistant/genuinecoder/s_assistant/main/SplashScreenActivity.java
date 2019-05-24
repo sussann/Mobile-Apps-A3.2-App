@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import assistant.genuinecoder.s_assistant.R;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
