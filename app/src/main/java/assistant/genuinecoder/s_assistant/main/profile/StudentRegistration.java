@@ -44,8 +44,10 @@ public class StudentRegistration extends AppCompatActivity {
     public void saveToDatabase(View view) {
         EditText name = (EditText) findViewById(R.id.edit_name);
         EditText roll = (EditText) findViewById(R.id.roll);
+        EditText parentName = (EditText) findViewById(R.id.parent_name);
         EditText register = (EditText) findViewById(R.id.register);
         EditText contact = (EditText) findViewById(R.id.contact);
+        EditText email = (EditText) findViewById(R.id.email);
         String classSelected = spinner.getSelectedItem().toString();
 
         if (name.getText().length() < 2 || roll.getText().length() == 0 || register.getText().length() < 2 ||
@@ -60,8 +62,10 @@ public class StudentRegistration extends AppCompatActivity {
 
         String qu = "INSERT INTO STUDENT VALUES('" + name.getText().toString() + "'," +
                 "'" + classSelected + "'," +
+                "'" + parentName.getText().toString() + "'," +
                 "'" + register.getText().toString().toUpperCase() + "'," +
                 "'" + contact.getText().toString() + "'," +
+                "'" + email.getText().toString() + "'," +
                 "" + Integer.parseInt(roll.getText().toString()) + ");";
         Log.d("Student Reg", qu);
         AppBase.handler.execAction(qu);

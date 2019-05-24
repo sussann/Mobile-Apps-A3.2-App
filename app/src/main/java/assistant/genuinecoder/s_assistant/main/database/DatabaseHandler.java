@@ -19,8 +19,8 @@ public class DatabaseHandler {
     public void createTable() {
         try {
             String qu = "CREATE TABLE IF NOT EXISTS STUDENT(name varchar(1000)," +
-                    "cl varchar(100), " +
-                    "regno varchar(100) primary key, contact varchar(100),roll integer);";
+                    "cl varchar(100), parent varchar(100)," +
+                    "regno varchar(100) primary key, contact varchar(100), email varchar(100), roll integer);";
             database.execSQL(qu);
         } catch (Exception e) {
             Toast.makeText(activity, "Error Occured for create table", Toast.LENGTH_LONG).show();
