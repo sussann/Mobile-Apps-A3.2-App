@@ -57,6 +57,7 @@ public class AppBase extends AppCompatActivity {
         basicFields.add("NOTES");
         basicFields.add("PROFILE");
         basicFields.add("CGPA CALCULATOR");
+        basicFields.add("COMMUNICATION");
         adapter = new GridAdapter(this, basicFields);
         gridView.setAdapter(adapter);
     }
