@@ -1,4 +1,4 @@
-package assistant.genuinecoder.s_assistant.main;
+package assistant.genuinecoder.s_assistant.main.components;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import assistant.genuinecoder.s_assistant.R;
+import assistant.genuinecoder.s_assistant.main.AppBase;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
