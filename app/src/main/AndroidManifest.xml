@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.communication.CommunicationActivity"></activity>
         <activity android:name=".main.components.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,6 +53,10 @@
             android:parentActivityName=".main.AppBase" />
         <activity
             android:name=".main.profile.EditStudentActivity"
+            android:parentActivityName=".main.AppBase" />
+
+        <activity
+            android:name=".main.communication.CommunicationActivity"
             android:parentActivityName=".main.AppBase" />
     </application>
 
