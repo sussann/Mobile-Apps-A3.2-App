@@ -12,7 +12,9 @@
         <activity android:name=".main.components.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                
+        <!--<activity android:name=".main.communication.CommunicationActivity"></activity>-->  
+                
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
